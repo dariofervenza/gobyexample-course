@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// RUN WITH: go run 16.generics.go  17.range_over_iterators.go
+
 // since go 1.18
 
 // generics are also nkow as type parameters
@@ -75,5 +77,8 @@ func main() {
 	list.Push(23)
 
 	fmt.Println("All elements:\n", list.AllElements())
+
+	fmt.Println("\n\nRange Over Iterators\n\n")
+	main_range_over_iterators(50)
 
 }
