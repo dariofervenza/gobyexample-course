@@ -7,6 +7,8 @@ import (
 
 // interfaces are collections of method signatures
 
+// understand how interfaces work under the hood in https://research.swtch.com/interfaces
+
 type geometry interface {
 	area() float64
 	// no comma needed
